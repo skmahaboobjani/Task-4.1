@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
 
+
+import Card from './components/Card';
 function App() {
+
+  const styling={
+    display:'flex'
+    
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+     <div style={ styling}>
+    <Card colors='#FF6663' name='#FF6663' text='PINK'/>
+    <Card colors='#333333' name='#333333' text='GRAY'/>
+    <Card colors='#000000' name='#000000'text='BLACK'/>
+    <Card colors='#38BB15' name='#38BB15'text='GREEN'/>
+    <Card colors='#C90B0B' name='#C90B0B'text='RED'/>
     </div>
+    <div style={ styling}>
+    <Card colors='#FF7F00' name='#FF800' text='ORANGE'/>
+    <Card colors='#FFF500' name='#FFF500' text='YELLOW'/>
+    <Card colors='#CCCCCC' name='#CCCCCC'text='LIGHT GRAY'/>
+    <Card colors='#7E40A1' name='7E41A2'text='PURPLE'/>
+    <Card colors='#C14911' name='#C14911'text='BROWN'/>
+    </div>
+    
+      </div>
+    
+    
+    
+   
   );
 }
 
