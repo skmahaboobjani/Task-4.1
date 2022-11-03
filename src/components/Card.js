@@ -6,7 +6,7 @@ function Card(props)
    
     return(
     <div>
-      <h1>
+     
         <div className='center'>
        <div className='outline'>
         <div className='card' style={{backgroundColor:props.colors}} >
@@ -20,7 +20,7 @@ function Card(props)
        </div>
        </div>
        </div>
-      </h1>
+      
 
 
 </div>
